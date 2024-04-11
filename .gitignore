@@ -1,0 +1,7 @@
+.DS_Store
+
+# files *.xcodeproj and *.xcworkspace are generated, so we need to ignore them to avoid merge conflicts.
+*.xcodeproj
+*.xcworkspace
+
+Pods/

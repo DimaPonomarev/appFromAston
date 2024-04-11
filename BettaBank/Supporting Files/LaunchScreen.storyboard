@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бетта-Банк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wf0-Ak-sqd">
+                                <rect key="frame" x="132.33333333333331" y="411.66666666666669" width="128.33333333333331" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loader" translatesAutoresizingMaskIntoConstraints="NO" id="xFm-eb-MAw">
+                                <rect key="frame" x="130.66666666666666" y="504.33333333333326" width="131.99999999999997" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="8Dk-dj-s8h"/>
+                                    <constraint firstAttribute="width" secondItem="xFm-eb-MAw" secondAttribute="height" id="gtG-dz-Im1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Neo-8J-btJ">
+                                <rect key="frame" x="140" y="267.66666666666669" width="113" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Neo-8J-btJ" secondAttribute="height" constant="1" id="M7N-ZX-gpe"/>
+                                    <constraint firstAttribute="height" constant="112" id="RJW-uf-jSE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Neo-8J-btJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1xm-pd-pvs"/>
+                            <constraint firstItem="xFm-eb-MAw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DbN-lj-D1M"/>
+                            <constraint firstItem="xFm-eb-MAw" firstAttribute="top" secondItem="wf0-Ak-sqd" secondAttribute="bottom" constant="64" id="TOB-Zu-4Cl"/>
+                            <constraint firstItem="wf0-Ak-sqd" firstAttribute="top" secondItem="Neo-8J-btJ" secondAttribute="bottom" constant="32" id="YaC-vu-DEF"/>
+                            <constraint firstItem="wf0-Ak-sqd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dop-eu-6Q9"/>
+                            <constraint firstItem="wf0-Ak-sqd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hq8-e0-lFM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206.87022900763358" y="353.52112676056339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Loader" width="264" height="264"/>
+        <image name="Logo" width="114.5" height="144.5"/>
+    </resources>
+</document>

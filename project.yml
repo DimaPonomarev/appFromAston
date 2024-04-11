@@ -1,0 +1,49 @@
+name: BettaBank
+options:
+  bundleIdPrefix: com.astondevs
+  usesTabs: false
+  indentWidth: 4
+  tabWidth: 4
+  deploymentTarget:
+    iOS: 15.0
+  groupSortPosition: top
+configs:
+  Debug: debug
+  Release: release
+targets:
+  BettaBank:
+    type: application
+    platform: iOS
+    deploymentTarget: 15.0
+    sources:
+      - path: BettaBank
+    scheme: 
+      testTargets:
+        - BettaBankTests
+    settings:
+      base:
+        CODE_SIGN_IDENTITY: iPhone Developer
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: LV744N3C27
+        INFOPLIST_FILE: BettaBank/Supporting Files/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.astondevs.BettaBank
+        MARKETING_VERSION: 1.0
+        TARGETED_DEVICE_FAMILY: 1 # iPhone only
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO # Disable mac support
+    postCompileScripts:
+      - script: |
+                "${PODS_ROOT}/SwiftLint/swiftlint"
+        name: SwiftLint
+        basedOnDependencyAnalysis: false
+  BettaBankTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: BettaBankTests
+    deploymentTarget: 15.0
+    targets: [BettaBank]
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: 1 # iPhone only
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO # Disable mac support
+        GENERATE_INFOPLIST_FILE: YES

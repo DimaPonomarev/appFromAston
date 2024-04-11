@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="OperationManagedObject" representedClassName="OperationManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="operationCount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="operationTime" optional="YES" attributeType="String"/>
+        <attribute name="operationType" optional="YES" attributeType="String"/>
+        <attribute name="senderAccountNumber" optional="YES" attributeType="String"/>
+        <attribute name="senderBank" optional="YES" attributeType="String"/>
+        <attribute name="senderName" optional="YES" attributeType="String"/>
+        <attribute name="systemType" optional="YES" attributeType="String"/>
+        <attribute name="userAccountNumber" optional="YES" attributeType="String"/>
+    </entity>
+</model>

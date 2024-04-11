@@ -1,0 +1,28 @@
+PODS:
+  - KeychainSwift (20.0.0)
+  - SnapKit (5.6.0)
+  - SwiftLint (0.54.0)
+  - YandexMapsMobile (4.4.0-lite)
+
+DEPENDENCIES:
+  - KeychainSwift
+  - SnapKit
+  - SwiftLint
+  - YandexMapsMobile (= 4.4.0-lite)
+
+SPEC REPOS:
+  trunk:
+    - KeychainSwift
+    - SnapKit
+    - SwiftLint
+    - YandexMapsMobile
+
+SPEC CHECKSUMS:
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  YandexMapsMobile: 74934971bbd3716e6daecfebed696c07b83b6b22
+
+PODFILE CHECKSUM: be69d073691d693570e0a834c7737b5830c52a66
+
+COCOAPODS: 1.14.3

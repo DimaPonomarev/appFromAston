@@ -1,0 +1,22 @@
+disabled_rules:
+  - trailing_whitespace
+  - mark
+  - legacy_constructor
+  - todo
+line_length:
+  warning: 150
+#  error: 30000
+excluded:
+  - Pods
+opt_in_rules:
+  - force_unwrapping
+  
+custom_rules:
+  incorrect usage SnapKit:
+    regex: "\\.snp\\.makeConstraints\\s*\\{\\s*\\$0\\."
+    message: "Use 'make' instead of '$0' when defining SnapKit constraints."
+    severity: warning
+    
+  protocols should not start with 'I' :
+    regex: "^protocol\\s[I]"
+    severity: warning
